@@ -361,6 +361,8 @@ while True:
             #data = "id:{}.dotX:{}.dotY:{}".format(label, dotX, dotY)
             loraPayload = "{}.{}.{}".format(label, dotX, dotY)
 
+
+            # calculate payload size
             def utf8len(s):
                 return len(s.encode('utf-8'))
 
