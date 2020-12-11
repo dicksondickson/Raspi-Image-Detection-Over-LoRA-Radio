@@ -1,0 +1,11 @@
+[Unit]
+Description=Lora Bridge2
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/lora_bridge_noscreen.py
+User=pi
+
+[Install]
+WantedBy=multi-user.target
